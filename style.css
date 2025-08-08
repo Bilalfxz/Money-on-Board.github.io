@@ -1,0 +1,322 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  color: #191919;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 34px 16px 34px;
+  background: #fff;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 32px;
+  color: #191919;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #e67a20;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 37px 34px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.hero-right p {
+  font-size: 15px;
+  color: #191919;
+}
+
+/* Console Banner */
+.console-banner {
+  background: #26f2a3;
+  color: #191919;
+  padding: 22px 34px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.console-banner pre {
+  font-size: 17px;
+  background: none;
+  border: none;
+}
+
+/* Companies Bar */
+.companies {
+  background: #232323;
+  padding: 16px 34px;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.company-list span {
+  margin-right: 34px;
+}
+
+.company-list .apple {
+  background: url('https://img.icons8.com/ios-filled/24/ffffff/mac-os.png') no-repeat center center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* About/Profile Section */
+.about-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 34px;
+  background: #fff;
+  position: relative;
+  height: 330px;
+}
+
+.intro {
+  flex: 1;
+  margin-right: 34px;
+}
+
+.intro h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.intro p {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background: #191919;
+  color: #fff;
+  padding: 9px 26px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.profile-pic {
+  flex: 1;
+  height: 205px;
+  margin-left: 34px;
+  /* Intentionally left blank */
+}
+
+.background-sam {
+  position: absolute;
+  bottom: 10px;
+  left: 32%;
+}
+
+.background-sam h1 {
+  font-size: 94px;
+  font-weight: bold;
+  color: #e67a20;
+  opacity: 0.6;
+  letter-spacing: 4px;
+}
+
+/* Packages Section */
+.packages {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  background: #fff4ec;
+  padding: 50px 0 50px 0;
+}
+
+.package {
+  background: #191919;
+  color: #fff;
+  width: 310px;
+  min-height: 370px;
+  border-radius: 8px;
+  padding: 22px;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border: 2px dashed #ff9743;
+}
+
+.package h4 {
+  color: #e67a20;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.package h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.package ul {
+  list-style: disc;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.secure-btn {
+  width: 100%;
+  background: #ff9743;
+  color: #191919;
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.20s;
+}
+
+.secure-btn:hover {
+  background: #e67a20;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 36px 34px 0 34px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-brand {
+  flex-basis: 30%;
+}
+
+.footer-brand .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-brand input[type="email"] {
+  padding: 9px 12px;
+  border-radius: 3px;
+  border: 1px solid #191919;
+  margin-top: 12px;
+  font-size: 15px;
+  width: 80%;
+}
+
+.footer-links {
+  flex-basis: 30%;
+  display: flex;
+  gap: 44px;
+}
+
+.footer-links h5 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #191919;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.footer-links a:hover {
+  color: #e67a20;
+}
+
+.footer-social {
+  flex-basis: 16%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 22px;
+}
+
+.footer-copy {
+  text-align: left;
+  font-size: 14px;
+  color: #191919;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 950px) {
+  .about-profile {
+    flex-direction: column;
+    height: auto;
+  }
+  .background-sam {
+    position: static;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .packages {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 25px 0;
+  }
+  .footer-main {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
